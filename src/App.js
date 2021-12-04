@@ -12,6 +12,7 @@ class App extends Component {
           <p className="start">Get Started!</p>
           <p>Welcome :)</p>
           <Ninjas name="Sud" age="22" belt="green" />
+          <Ninjas name="Man" age="18" belt="blue" />
         </main>
         <footer className="App-footer bg-dark text-light py-5">
           <p className="text-center">&Copy; 2021 Featuriz</p>
