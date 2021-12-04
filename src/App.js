@@ -20,6 +20,15 @@ class App extends Component {
       ninjas: ninjasx
     })
   }
+  deleteNinja = (id) => {
+    // console.log(id)
+    let ninjay = this.state.ninjas.filter(ninja => {
+      return ninja.id !== id
+    })
+    this.setState({
+      ninjas: ninjay
+    })
+  }
   render() {
     return (
       <div className="App">
@@ -29,7 +38,7 @@ class App extends Component {
         <main className="App-body py-2">
           <p className="start">Get Started!</p>
           <p>Welcome :)</p>
-          <Ninjas ninjas={this.state.ninjas} />
+          <Ninjas deleteNinja={this.deleteNinja} ninjas={this.state.ninjas} />
           <AddNinja addNinja={this.addNinja} />
         </main>
         <footer className="App-footer bg-dark text-light py-5">

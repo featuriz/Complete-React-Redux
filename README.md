@@ -1,13 +1,13 @@
 # INFO
 
-Forms - Functions and props
+Deleting data
 
-- At App - created addNinja function to handle form
-- pass this function to AddNinja as prop
-- At AddNinja.js assign the state to this function. So function at App can handle AddNinja state.
-- Create random id
-- Create spread operator ...
-- Create a copy of old array and add new to it
-- Using this.setState change the state.
+- Create deleteNinja function at App
+- As previous chapter pass this function to Ninjas
+- At Ninjas create delete button for each
+- We Cannot pass directly, that's why ()
+- On submit it passes back to App.js
+- Create new list with filtering the old (remove by id)
+- Set this list to state.
 
-Thats all Now the form date will be update to UI.
+End!
