@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Ninjas from "./Ninjas";
+import AddNinja from "./AddNinja";
 
 class App extends Component {
   state = {
@@ -19,6 +20,7 @@ class App extends Component {
           <p className="start">Get Started!</p>
           <p>Welcome :)</p>
           <Ninjas ninjas={this.state.ninjas} />
+          <AddNinja />
         </main>
         <footer className="App-footer bg-dark text-light py-5">
           <p className="text-center">&copy; 2021 Featuriz</p>

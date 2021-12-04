@@ -1,6 +1,10 @@
 # INFO
 
-- Conditional Output
-- Using if or ternary operators - to filter the list
+Forms
 
-Display list based on conditions.
+- Created AddNinja form Component
+- Form added to App
+- Events
+  - Submit
+  - onChange
+- When submit console.log
