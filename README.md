@@ -1,5 +1,5 @@
 # INFO
 
-- LIST Output
+- STATELESS Components
 
-Passing data as list from parent Component to child
+Using function for UI Components. Because it dosen't need state.
