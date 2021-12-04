@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Ninjas = (props) => {
+const Ninjas = ({ ninjas }) => {
     // console.log(props)
     // We can't use state here, because this is a function. To use we have to declare class.
     // This is best for UI Components!
     // state = {
     //     one: 'onex'
     // }
-    const { ninjas } = props;
+    // const { ninjas } = props;
     const ninjaList = ninjas.map(ninja => {
         return (
             <div className="ninja" key={ninja.id}>
