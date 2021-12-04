@@ -1,8 +1,6 @@
 # INFO
 
-- STATELESS Components
+- Conditional Output
+- Using if or ternary operators - to filter the list
 
-Using function for UI Components. Because it dosen't need state.
-
-- Container Components with state
-- UI Components without states, made by functions
+Display list based on conditions.

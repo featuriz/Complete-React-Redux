@@ -5,7 +5,7 @@ class App extends Component {
   state = {
     ninjas: [
       { name: 'Sudhakar', age: 33, belt: 'green', id: 1 },
-      { name: 'Nithu', age: 22, belt: 'red', id: 2 },
+      { name: 'Nithu', age: 18, belt: 'red', id: 2 },
       { name: 'Lisu', age: 25, belt: 'blue', id: 3 }
     ]
   }
@@ -21,7 +21,7 @@ class App extends Component {
           <Ninjas ninjas={this.state.ninjas} />
         </main>
         <footer className="App-footer bg-dark text-light py-5">
-          <p className="text-center">&Copy; 2021 Featuriz</p>
+          <p className="text-center">&copy; 2021 Featuriz</p>
         </footer>
       </div>
     );
