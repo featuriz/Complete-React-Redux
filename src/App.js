@@ -10,6 +10,16 @@ class App extends Component {
       { name: 'Lisu', age: 25, belt: 'blue', id: 3 }
     ]
   }
+
+  addNinja = (ninja) => {
+    // console.log(ninja)
+    ninja.id = Math.random();
+    // copy of old array + add new
+    let ninjasx = [...this.state.ninjas, ninja]
+    this.setState({
+      ninjas: ninjasx
+    })
+  }
   render() {
     return (
       <div className="App">
@@ -20,7 +30,7 @@ class App extends Component {
           <p className="start">Get Started!</p>
           <p>Welcome :)</p>
           <Ninjas ninjas={this.state.ninjas} />
-          <AddNinja />
+          <AddNinja addNinja={this.addNinja} />
         </main>
         <footer className="App-footer bg-dark text-light py-5">
           <p className="text-center">&copy; 2021 Featuriz</p>

@@ -1,10 +1,13 @@
 # INFO
 
-Forms
+Forms - Functions and props
 
-- Created AddNinja form Component
-- Form added to App
-- Events
-  - Submit
-  - onChange
-- When submit console.log
+- At App - created addNinja function to handle form
+- pass this function to AddNinja as prop
+- At AddNinja.js assign the state to this function. So function at App can handle AddNinja state.
+- Create random id
+- Create spread operator ...
+- Create a copy of old array and add new to it
+- Using this.setState change the state.
+
+Thats all Now the form date will be update to UI.
