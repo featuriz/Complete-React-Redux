@@ -1,3 +1,5 @@
 # INFO
 
-- Nesting Components
+- PROPS
+
+Passing data from parent Component to child
