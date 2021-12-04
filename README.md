@@ -1,5 +1,5 @@
 # INFO
 
-- PROPS
+- LIST Output
 
-Passing data from parent Component to child
+Passing data as list from parent Component to child

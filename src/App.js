@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import Ninjas from "./Ninjas";
 
 class App extends Component {
+  state = {
+    ninjas: [
+      { name: 'Sudhakar', age: 33, belt: 'green', id: 1 },
+      { name: 'Nithu', age: 22, belt: 'red', id: 2 },
+      { name: 'Lisu', age: 25, belt: 'blue', id: 3 }
+    ]
+  }
   render() {
     return (
       <div className="App">
@@ -11,8 +18,7 @@ class App extends Component {
         <main className="App-body py-2">
           <p className="start">Get Started!</p>
           <p>Welcome :)</p>
-          <Ninjas name="Sud" age="22" belt="green" />
-          <Ninjas name="Man" age="18" belt="blue" />
+          <Ninjas ninjas={this.state.ninjas} />
         </main>
         <footer className="App-footer bg-dark text-light py-5">
           <p className="text-center">&Copy; 2021 Featuriz</p>
